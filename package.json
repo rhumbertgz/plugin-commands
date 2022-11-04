@@ -1,7 +1,7 @@
 {
   "name": "@iswc/plugin-mycommands",
   "description": "plugin to show the list of all my commands",
-  "version": "0.1",
+  "version": "0.0.1",
   "author": "Salesforce",
   "bugs": "https://github.com/oclif/plugin-commands/issues",
   "dependencies": {
