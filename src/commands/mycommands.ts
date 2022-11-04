@@ -4,8 +4,8 @@ import {EOL} from 'os'
 import createCommandTree from '../utils/tree'
 
 type Dictionary = {[index: string]: object}
-export default class Commands extends Command {
-  static description = 'list all the commands'
+export default class MyCommands extends Command {
+  static description = 'list all the my commands'
 
   static enableJsonFlag = true
 
@@ -17,7 +17,7 @@ export default class Commands extends Command {
   }
 
   async run() {
-    const {flags} = await this.parse(Commands)
+    const {flags} = await this.parse(MyCommands)
     let commands = this.getCommands()
     if (!flags.hidden) {
       commands = commands.filter(c => !c.hidden)
